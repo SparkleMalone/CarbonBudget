@@ -1,3 +1,13 @@
+
+## Objectives:
+In this workshop you will:
+
+1. Use select() to choose variables from a data frame.
+2. Use filter() to choose data based on values.
+3. Use reframe to work with subsets of data.
+4. Visualize data with ggplot2.
+5. Learn to write basic functions.
+
 # The Carbon Budget
 
 Carbon exists primarily in three forms: as carbon dioxide (CO2) in air and water, as organic carbon (found in proteins, fats, carbohydrates, and nucleic acids) in living and dead organisms, and as carbonate ions (CO₃²⁻) in water, rocks, shells, and bones. The cycling of carbon occurs through both biological and geochemical processes. Biological processes transfer carbon between organisms and the environment, while geochemical processes transfer carbon between sedimentary rocks, the atmosphere, oceans, and living organisms. Biological processes operate on relatively short timescales, ranging from years to hundreds of years, whereas geochemical processes span millions of years. To understand how these processes are interconnected in the carbon cycle, it is helpful to think in terms of pools (sources and sinks) and fluxes. Pools are reservoirs of carbon, with sources acting as carbon emitters and sinks as carbon absorbers. Fluxes represent the movement of carbon between these sources and sinks. Importantly, a single pool can function as both a source and a sink. For instance, the atmosphere serves as a source of carbon dioxide for photosynthesis, but it is also a sink for carbon released through respiration, combustion, and decay. Given that carbon dioxide is a greenhouse gas, there is concern that continued increases in atmospheric carbon could lead to global climate change. In this exercise you will explore the global carbon budget and become familiar with unit changes. This budget exercise is based on Friedlingstein et al., (2023).
