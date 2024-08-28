@@ -2,9 +2,9 @@
 ## Objectives:
 In this workshop you will:
 
-1. Use select() to choose variables from a data frame.
+1. Use select() to choose variables from a dataframe.
 2. Use filter() to choose data based on values.
-3. Use reframe to work with subsets of data.
+3. Use reframe to summarize data by a group.
 4. Visualize data with ggplot2.
 5. Learn to write basic functions.
 
@@ -94,9 +94,7 @@ atmosphere.pool/ (atmosphere.pool + terrestrial.pool+ ocean.pool) *100
 ```
 # Functions:
 
-A key feature of R is functions. Functions are “self contained” modules of code that accomplish a specific task. Functions usually take in some sort of data structure (value, vector, dataframe etc.), process it, and return a result.
-
-The general usage for a function is the name of the function followed by parentheses:
+A key feature of R is functions. Functions are “self contained” modules of code that accomplish a specific task. Functions usually take in some sort of data structure (value, vector, dataframe etc.), process it, and return a result. The general usage for a function is the name of the function followed by parentheses:
 
 The input(s) are called arguments, which can include:the physical object (any data structure) on which the function carries out a task specifications that alter the way the function operates (e.g. options). Not all functions take arguments, for example: getwd(). However, most functions can take several arguments. 
 
@@ -108,11 +106,15 @@ One of the great strengths of R is the user’s ability to add functions. Someti
     return(something)
   }
 ```
-Lets write a function to convert ppm to Gt C using Table 1 in Friedlingstein et al., (2023).
+Lets write a function to convert ppm of CO2 to gigatonnes of carbon using Table 1 in Friedlingstein et al., (2023).
 ```{r}
 ppm_to_Gt_C <- function( ppm){
   Gt_C = ppm*2.124
   return(Gt_C)
 }
 ```
-### Challenge: Create a generic function that can convert from ppm, Pg C, Gt C, or Mt C to Gt_C. Use Table 1 in Friedlingstein et al., (2023).
+#Challenge
+
+Create a function that can convert from gigatonnes of CO2 to gigatonnes of C. Use Table 1 in Friedlingstein et al., (2023). Put this function into a script and save it. Upload your script to canvas for Assessment 1.
+
+Bonus: Create a generic function to convert all units in table 1 to gigatonnes of C.
