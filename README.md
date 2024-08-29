@@ -30,7 +30,7 @@ summary(Carbon_Budget)
 names(Carbon_Budget)
 ```
 
-Explore the Major Reservoirs of Carbon Pools. To do this, filter the dataframe to include only Type == Pool.
+Explore the Major Reservoirs of carbon Pools. To do this, filter the dataframe to include only Type == Pool.
 ```{r}
 Carbon_Budget %>% filter(Type == 'Pool' )
 ```
@@ -55,16 +55,16 @@ Carbon_Budget %>% filter(Type == 'Pool',
                          Major_Reservior == 'Terrestrial') %>% select( Sub_Reservior)
 ```
 
-How much Carbon is in the Atmosphere?
+How much carbon is in the Atmosphere?
 ```{r}
 atmosphere.pool <- Carbon_Budget %>% filter(Type == 'Pool', Major_Reservior == 'Atmosphere' ) %>% select(Carbon_Gt) %>% sum
 ```
 
-How much Carbon is in the Ocean?
+How much carbon is in the Ocean?
 ```{r}
 ocean.pool <- Carbon_Budget %>% filter(Type == 'Pool', Major_Reservior == 'Ocean' ) %>% select(Carbon_Gt) %>% sum
 ```
-How much Carbon is on land? 
+How much carbon is on land? 
 ```{r}
 terrestrial.pool <- Carbon_Budget %>% filter(Type == 'Pool', Major_Reservior == 'Terrestrial',  Sub_Reservior != 'Sedimentary Rocks'  ) %>% select(Carbon_Gt) %>% sum
 ```
