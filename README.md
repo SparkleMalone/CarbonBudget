@@ -113,8 +113,8 @@ ppm_to_Gt_C <- function( ppm){
   return(Gt_C)
 }
 ```
-#Challenge
+# Challenge:
 
-Create a function that can convert from gigatonnes of CO2 to gigatonnes of C. Use Table 1 in Friedlingstein et al., (2023). Put this function into a script and save it. Upload your script to canvas for Assessment 1.
+Create a function that can convert from gigatonnes of CO<sup>2</sup> to gigatonnes of C. Use Table 1 in Friedlingstein et al., (2023). Put this function into a script and save it. Upload your script to canvas for Assessment 1.
 
 Bonus: Create a generic function to convert all units in table 1 to gigatonnes of C.
