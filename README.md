@@ -19,7 +19,8 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-# Import your data and name the file Carbon_Budget:
+Import your data and name the file Carbon_Budget:
+
 ```{r}
 Carbon_Budget <- read.csv("data/Carbon Budget.csv")
 ```
